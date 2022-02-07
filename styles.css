@@ -6,6 +6,13 @@
 html, body, site {
     height: 100%;
 }
+.catalog__img {
+    width: 170px;
+    height: 130px;
+}
+img {
+    max-width: 100%;
+}
 
 .site {
     width: inherit;
@@ -74,7 +81,11 @@ header {
     padding-left: 10px;
 }
 .header__item:first-child {
-    margin-left: 50px;
+    line-height: 50px;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
 }
 .header__item:hover {
     background-color: #3e50b8;
@@ -119,5 +130,17 @@ header {
 .catalog__add {
 }
 .dispNone {
+    display: none;
+}
+.header__add {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+}
+*[hidden] {
     display: none;
 }

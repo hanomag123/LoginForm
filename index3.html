@@ -10,14 +10,20 @@
 <body>
     <header>
         <div class="header__item">
-            Каталог
+            <div data-status="add">Добавить</div>
+            <div class="header__add">
+                <input type="text" placeholder="input title">
+                <input type="text" placeholder="input discription">
+                <input type="link" placeholder="input image link">
+                <button data-status="addItem">Добавить</button>
+            </div>
         </div>
         <div class="header__item">
-            <input type="text" data-status="search">
+            <input type="text" data-status="search" placeholder="try to find">
         </div>
         <div class="header__item busket">
             <div data-status="busket">Корзина</div>
-            <div class="header__busketContainer"></div>
+            <div hidden class="header__busketContainer"></div>
         </div>
     </header>
     <div class="catalog">
